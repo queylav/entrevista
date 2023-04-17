@@ -1,0 +1,23 @@
+5)
+
+Utilizando a notação de slice já é possível
+
+txt = "Inverter texto"[::-1]
+print(txt) # otxet retrevnI
+
+Basicamente estamos utilizando um slice no começo da string que se move de trás para frente
+
+Começando do primeiro caractere e indo em um passo negativo de -1
+
+Esta operação resulta na string inversa dentro da variável txt, onde imprimimos ela posteriormente
+
+Em outras linguagens geralmente utilizamos funções para atingir este resultado, o que pode acabar prejudicando a performance
+
+Com Pyhton conseguimos utilizar operadores nativos para inverter a string, e encapsular esta inversão em uma variável
+
+ficara da seguinte forma:
+
+def inverter(txt):
+  return txt[::-1]
+
+Desta forma é possível realizar o reaproveitamento de código de uma maneira fácil
